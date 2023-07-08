@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NBA | {{selected_name}}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="static/assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+		<!--[if lte IE 9]><link rel="stylesheet" href="static/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img width="200"; src="static/images/profilePic.jpg" alt="" /></span>
+							<h1 style="color: black;"><strong>{{selected_name}}</strong></h1>
+							<ol style="color: gray;"> <b>POSITION:</b>  {{player_names[selected_name][1]}} </ol>
+							<ol style="color: gray;"><b>HEIGHT:</b> {{player_names[selected_name][5]}}</ol>
+							<ol style="color: gray;"><b>WEIGHT:</b> {{player_names[selected_name][8]}} lbs</ol>
+							<ol style="color: gray;"><b>STANDING REACH:</b> {{player_names[selected_name][7]}} feet</ol>
+							<ol style="color: gray;"><b>WINGSPAN:</b> {{player_names[selected_name][9]}}</ol>
+							<ol style="color: gray;"><b>HAND LENGTH:</b> {{player_names[selected_name][3]}} inches</ol>
+							<ol style="color: gray;"><b>HAND WIDTH:</b> {{player_names[selected_name][4]}} inches</ol>
+							<ol style="color: gray;"><b>LANE AGILITY TIME:</b> {{player_names[selected_name][10]}} seconds</ol>
+							<ol style="color: gray;"><b>SHUTTLE RUN:</b> {{player_names[selected_name][11]}} seconds</ol>
+							<ol style="color: gray;"><b>THREE QUARTER SPRINT:</b> {{player_names[selected_name][12]}} seconds</ol>
+							<ol style="color: gray;"><b>STANDING VERTICAL LEAP:</b> {{player_names[selected_name][13]}} inches</ol>
+							<ol style="color: gray;"><b>MAX VERTICAL LEAP:</b> {{player_names[selected_name][14]}} inches</ol>
+						</header>
+
+
+
+						<!-- POP-UP: -->
+
+						<div class="box">
+							<a href="#popup-box">
+								<button>comparison</button>
+							</a>
+						</div>
+						<div id="popup-box" class="modal">
+							<div class="content">
+								<h1 style="color: black; font-weight: bold">
+									Leaderboard
+								</h1>
+								<hr>
+								<h3 style="color: blue;">HIGHEST STANDING REACH</h3>
+								<h5>Zach Edey : 9' 7.50''</h5>
+								<h3 style="color: blue;">MAX HEIGHT</h3>
+								<h5>Zach Edey : 7' 3.25''</h5>
+								<h3 style="color: blue;">LONGEST WINGSPAN</h3>
+								<h5>Zach Edey : 7' 10.50''</h5>
+								<h3 style="color: blue;">HIGHEST STANDING VERTICAL LEAP</h3>
+								<h5>Julian Phillips: 36.00'</h5>
+								<h3 style="color: blue;">HIGHEST MAX VERTICAL LEAP</h3>
+								<h5>Julian Phillips: 43.00'</h5>
+								<h3 style="color: blue;">FASTEST SHUTTLE RUN</h3>
+								<h5>Gradey Dick: 2.98</h5>
+								<h3 style="color: blue;">QUICKEST LANE AGILITY</h3>
+								<h5>Grant Nelson : 9.99</h5>
+								<h3 style="color: blue;">FASTEST THREE QUARTER SPRINT</h3>
+								<h5>Terrence Shannon Jr. : 3.06</h5>
+								<hr>
+								<b>
+									<p class="note">Note: Leader standings are based on combine attendance and drill participation.
+									missing data fields are a result of a player's absence from the combine/drills.
+									</p>
+								</b>
+								<a href="#"
+								   class="box-close">
+									×
+								</a>
+							</div>
+						</div>
+
+						<div>
+							<form action="/">
+							<button>home</button>
+							</form>
+						</div>
+
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Prince Addo</li>
+							<li><a href="/">home</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="static/assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
